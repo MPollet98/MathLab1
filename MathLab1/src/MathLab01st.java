@@ -125,7 +125,7 @@ class Geometry
 
 	public static double rectanglePerimeter (double length , double  width )
 	{
-		return  2 * length + 2 * width ; 	
+		return  length +  width * 2; 	
 	}
 
 	public static double circumference (double radius )
@@ -169,7 +169,7 @@ class Geometry
 	
 	public static double circleArea ( double radius)                  
 	{ 
-	    return Math.PI * Math.sqrt(radius);
+	    return Math.PI * Math.pow(radius,2);
 	}
  
 
@@ -183,7 +183,7 @@ class Geometry
 	
 	public static double squarePrismSurfaceArea ( double side, double height)           
 	{ 
-	    return (2 * Math.sqrt(side)) + (4 * side * height); 
+	    return (2 * Math.pow(side,2)) + (4 * side * height); 
 	}
 	
 	public static double rectangularPrismSurfaceArea (double length,double width,double height)           
@@ -193,7 +193,7 @@ class Geometry
 	
 	public static double sphereSurfaceArea(double radius)           
 	{ 
-	    return 4 * Math.PI * Math.sqrt(radius); 
+	    return 4 * Math.PI * Math.pow(radius,2); 
 	}
 	
 	
@@ -207,7 +207,7 @@ class Geometry
 	
 	public static double squarePrismVolume (double side,double height)             
 	{ 
-	    return Math.sqrt(side) * height; 
+	    return Math.pow(side,2) * height; 
 	}
 	
 	public static double rectangularPrismVolume (double length,double width,double height)            
@@ -217,17 +217,17 @@ class Geometry
 	
 	public static double pyramidVolume (double side,double height)             
 	{ 
-	    return Math.sqrt(side) * (height / 3); 
+	    return Math.pow(side,2) * (height / 3); 
 	}
 	
 	public static double cylinderVolume (double radius, double height)             
 	{ 
-	    return Math.PI * Math.sqrt(radius) * height; 
+	    return Math.PI * Math.pow(radius,2) * height; 
 	}
 	
 	public static double coneVolume(double radius, double height)             
 	{ 
-	    return Math.PI * Math.sqrt(radius) * (height / 3) ; 
+	    return Math.PI * Math.pow(radius,2) * (height / 3) ; 
 	}
 	
 	public static double sphereVolume (double radius)             
